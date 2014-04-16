@@ -1,6 +1,6 @@
 # Selenium::Connect::Browserstack
 
-TODO: Write a gem description
+Allows you to configure selenium-connect to run on Browserstack.com
 
 ## Installation
 
@@ -18,7 +18,18 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Add details to your config:
+
+```ruby
+---
+  browserstack:
+    os: 'Windows'
+    os_version: '7'
+    browser: 'IE'
+    browser_version: '10.0'
+    resolution: '1280x1024'
+    debug: true
+```
 
 ## Contributing
 

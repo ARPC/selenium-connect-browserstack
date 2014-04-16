@@ -1,6 +1,7 @@
-module SeleniumConnectBrowserstack
-  attr_accessor :browserstack, :debug, :os_version, :browser_version, :resolution
-end
-
+require 'selenium_connect_browserstack/configuration'
 require 'selenium_connect/configuration'
-SeleniumConnect::Configuration.send(:prepend, SeleniumConnectBrowserstack)
+SeleniumConnect::Configuration.send(:prepend, SeleniumConnectBrowserstack::Configuration)
+
+require 'selenium_connect_browserstack/runner'
+require 'selenium_connect/runner'
+SeleniumConnect::Runner.send(:prepend, SeleniumConnectBrowserstack::Runner)
