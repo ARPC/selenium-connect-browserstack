@@ -7,7 +7,6 @@ module SeleniumConnectBrowserstack
       end
       capabilities.delete(:username)
       capabilities.delete(:password)
-      STDOUT.puts "Using #{capabilities} !!!!!!!!!!!!!!!!"
       capabilities
     end
     
