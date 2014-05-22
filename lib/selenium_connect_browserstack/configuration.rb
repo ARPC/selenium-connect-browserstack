@@ -1,6 +1,12 @@
 module SeleniumConnectBrowserstack
   module Configuration
-    attr_accessor :browserstack, :debug, :os_version, :browser_version, :resolution
+    attr_accessor :browserstack,
+                  :debug,
+                  :os_version,
+                  :browser_version,
+                  :resolution,
+                  :project,
+                  :build
 
     def self.prepended(base)
       base.class_eval do
