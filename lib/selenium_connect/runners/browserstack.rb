@@ -48,7 +48,7 @@ class SeleniumConnect
         caps = browserstack_config.dup
         caps.delete(:username)
         caps.delete(:password)
-        caps[:build] = Time.now.to_i.to_s
+        caps[:build] ||= Time.now.to_i.to_s
         caps
       end
 
